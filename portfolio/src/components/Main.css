@@ -1,0 +1,126 @@
+.main-container {
+    position: relative;
+
+    height: 100vh;
+    margin: 0 auto;
+
+    color: white;
+    /* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif; 
+    */
+}
+
+.main-blue-light {
+    position: absolute;
+    left: 50%;
+    top: -1475px;
+    transform: translateX(-50%);
+    width: 1870px;
+    height: 1870px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #6548D4 0%, rgba(101, 72, 212, 0) 100%);
+
+    z-index: -1;
+}
+
+header {
+    max-width: 800px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 18px auto 0;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+}
+
+.logo>img {
+    height: 28px;
+}
+
+.dash {
+    align-self: flex-end;
+    margin-bottom: 3px;
+    width: 12px;
+    height: 4px;
+
+    border: none;
+    outline: none;
+    border-radius: 2px;
+
+    background-color: #0057FF;
+}
+
+.nav-bar {
+    width: 580px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-link {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+.main-title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.front-title {
+    margin: 0;
+
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: whitesmoke;
+
+    z-index: 10;
+}
+
+.back-title {
+    position: relative;
+    bottom: 109px;
+
+    margin: 0;
+
+    font-size: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.03);
+}
+
+.bottom-section {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+}
+
+.time {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+.bottom-section>.fa-angle-down {
+    font-size: 20px;
+}
