@@ -1,3 +1,15 @@
+/* 
+TODOs:
+- Responsive setup
+- Hamburger menu
+- Clock
+- Menu items hover animation
+- Menu items links
+- Main title animation
+- Arrow animation
+- Light animation
+*/
+
 .main-container {
     position: relative;
 
@@ -27,7 +39,8 @@
 .main-blue-light {
     position: relative;
     left: 50%;
-    top: -1475px;
+    /* top: -1475px; */
+    top: -1450px;
     transform: translateX(-50%);
     width: 1870px;
     height: 1870px;

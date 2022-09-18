@@ -1,0 +1,39 @@
+/* 
+TODOs:
+- Portfolio animation
+ */
+
+.portfolio-title {
+    margin: 120px auto 55px;
+    text-align: center
+}
+
+.right-blue-light-container {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.right-blue-light {
+    position: relative;
+    top: -460px;
+    right: -830px;
+    width: 1870px;
+    height: 1870px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #6548D4 0%, rgba(101, 72, 212, 0) 100%);
+    z-index: -10;
+
+}
+
+.portfolio-container {
+    max-width: 800px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+
+    margin: 0 auto;
+}
