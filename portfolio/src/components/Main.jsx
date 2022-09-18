@@ -8,7 +8,9 @@ function Main() {
   return (
     <>
       <div className="main-container">
-        <div className="main-blue-light"></div>
+        <div className="main-blue-light-container">
+          <div className="main-blue-light"></div>
+        </div>
         <header>
           <div className="logo">
             <img src={logo} alt="logo" />
