@@ -9,9 +9,9 @@ Gabor
 
 To launch the project:
 Make sure you have the latest node installed, or at least 15.6 version (or higher)
-1
-open the portfolio folder -> cd portfolio
-2
-install the dependencies -> npm install
-3
+1.)
+open the portfolio folder -> cd portfolio //
+2.)
+install the dependencies -> npm install //
+3.)
 launch the project -> npm start

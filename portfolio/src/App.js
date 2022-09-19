@@ -1,4 +1,5 @@
 import './App.css';
+import BlueLightRight from './components/BlueLightRight';
 import Main from './components/Main';
 import Portfolio from './components/Portfolio';
 
@@ -8,6 +9,7 @@ function App() {
         <div className="App">
 
             <Main />
+            <BlueLightRight />
             <Portfolio />
 
         </div>

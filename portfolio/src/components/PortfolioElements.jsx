@@ -3,11 +3,28 @@ import "./PortfolioElements.css";
 
 function PortfolioElements() {
   const [isVisible, setVisible] = useState(false);
+  const [isBtnProjectVisible, setBtnProjectVisible] = useState(false);
+  const [isBtnGitVisible, setBtnGitVisible] = useState(false);
   const [isLeft, setLeft] = useState(false);
 
   const visibleHandler = () => {
     setVisible(!isVisible);
     setLeft(!isLeft);
+  };
+
+  const btnProjectVisibleHandler = () => {
+    setBtnProjectVisible(true);
+  };
+
+  const btnProjectVisibleHandlerOff = () => {
+    setBtnProjectVisible(!isBtnProjectVisible);
+  };
+  const btnGitVisibleHandler = () => {
+    setBtnGitVisible(true);
+  };
+
+  const btnGitVisibleHandlerOff = () => {
+    setBtnGitVisible(!isBtnGitVisible);
   };
 
   /* 
@@ -17,7 +34,10 @@ TODOs:
 
   return (
     <div className="project-container">
-      <div onClick={visibleHandler} className="project-preview"></div>
+      <div
+        onClick={visibleHandler}
+        className={isLeft ? "project-preview left-top" : "project-preview"}
+      ></div>
 
       <div className={isVisible ? "project-details" : "project-details hidden"}>
         <div className="project-details-text">
@@ -29,11 +49,36 @@ TODOs:
           </p>
         </div>
         <div className="project-details-btn-container">
-          <a href="http://www.google.hu" target="_blank">
-            <i class="fa-solid fa-turn-down hidden"></i>Go to the project
+          <a
+            onMouseOver={btnProjectVisibleHandler}
+            onMouseLeave={btnProjectVisibleHandlerOff}
+            href="http://www.google.hu"
+            target="_blank"
+          >
+            <i
+              className={
+                isBtnProjectVisible
+                  ? "fa-solid fa-turn-down"
+                  : "fa-solid fa-turn-down hidden"
+              }
+            ></i>
+            Go to the project
           </a>
-          <a href="http://www.google.hu" target="_blank">
-            <i class="fa-brands fa-github hidden"></i>Check the code
+
+          <a
+            onMouseOver={btnGitVisibleHandler}
+            onMouseLeave={btnGitVisibleHandlerOff}
+            href="http://www.google.hu"
+            target="_blank"
+          >
+            <i
+              className={
+                isBtnGitVisible
+                  ? "fa-brands fa-github"
+                  : "fa-brands fa-github hidden"
+              }
+            ></i>
+            Check the code
           </a>
         </div>
       </div>
