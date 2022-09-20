@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import BehanceBtn from "./BehanceBtn";
 import "./Portfolio.css";
 import PortfolioElements from "./PortfolioElements";
 
@@ -21,6 +22,7 @@ function Portfolio() {
         <PortfolioElements />
         <PortfolioElements />
       </div>
+      <BehanceBtn />
     </>
   );
 }

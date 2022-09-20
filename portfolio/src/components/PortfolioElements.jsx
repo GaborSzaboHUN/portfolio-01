@@ -54,6 +54,7 @@ TODOs:
             onMouseLeave={btnProjectVisibleHandlerOff}
             href="http://www.google.hu"
             target="_blank"
+            rel="noreferrer"
           >
             <i
               className={
@@ -70,6 +71,7 @@ TODOs:
             onMouseLeave={btnGitVisibleHandlerOff}
             href="http://www.google.hu"
             target="_blank"
+            rel="noreferrer"
           >
             <i
               className={

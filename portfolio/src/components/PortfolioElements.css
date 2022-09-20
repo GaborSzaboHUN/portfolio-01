@@ -25,7 +25,7 @@ TODOs:
 }
 
 .left-top {
-    order: 0;
+    order: -1;
     align-self: flex-end;
 }
 
@@ -77,6 +77,8 @@ TODOs:
     width: 230px;
     height: 35px;
 
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +90,23 @@ TODOs:
     font-weight: 400;
     text-decoration: none;
     color: whitesmoke;
+
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
+
+.project-details-btn-container>a:hover::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    box-sizing: border-box;
+
+    width: 230px;
+    height: 35px;
+    border: 4px solid #E48900;
+    z-index: -10;
 }
 
 .fa-github,
