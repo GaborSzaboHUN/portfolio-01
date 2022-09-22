@@ -5,13 +5,15 @@ TODOs:
 
 .right-blue-light-container {
     position: absolute;
+    left: 0;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     z-index: -100;
 }
 
 .right-blue-light {
-    position: relative;
+    position: absolute;
     top: -460px;
     right: -830px;
     width: 1870px;
