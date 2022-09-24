@@ -1,0 +1,39 @@
+.chart-container {
+    position: relative;
+    width: 135px;
+    height: 135px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-baseline {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 125px;
+    height: 125px;
+
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+}
+
+.chart-percentage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 117px;
+    height: 117px;
+
+    border: 9px solid #e48900;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-chart {
+    font-size: 45px;
+    color: rgba(255, 255, 255, .2);
+}

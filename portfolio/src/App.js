@@ -3,6 +3,7 @@ import About from './components/About';
 import BlueLightRight from './components/BlueLightRight';
 import Main from './components/Main';
 import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <BlueLightRight />
             <Portfolio />
             <About />
+            <Skills />
 
         </div>
     );
