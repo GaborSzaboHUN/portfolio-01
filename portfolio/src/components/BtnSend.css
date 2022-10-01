@@ -1,0 +1,30 @@
+#btn-contact {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 335px;
+    height: 35px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    align-self: flex-end;
+
+    outline: none;
+    border: none;
+
+    background-color: #0057FF;
+
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: .05rem;
+    color: whitesmoke;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.fa-envelope {
+    font-size: 22px;
+}
